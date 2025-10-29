@@ -1,0 +1,985 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container1 {
+    height: 9%;
+    width: 100%;
+    background-color: rgba(255, 253, 251, 0.772);         /* Header background color */
+    position: fixed;
+    z-index: 200;
+}
+
+.container1 img {
+    height: 100%;
+    width: auto;
+    margin: 3px 50px 0px 50px;
+}
+
+.container1 li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.container1 .lis .out-a {
+    height: inherit;
+    width: 1px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #6B4F36;                      /* Text Color */
+}
+
+.lin {
+    height: 2px;
+    width: auto;
+    position: relative;
+}
+
+.lin::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: 0;
+    background-color: #6B4F36;           /* text color */
+}
+
+/* .container1 li a:hover::after { wrong to do
+    width: 100%;
+    height: 100%;
+} */
+
+.container1 .lis-di:hover .lin::after{
+    width: 100%;
+    height: 100%;
+    transition: 0.7s;
+}
+
+.linn {
+    height: 2px;
+    width: auto;
+    position: relative;
+}
+
+.linn::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: 0;
+    background-color: #6B4F36;           /* text color */
+}
+
+.container1 .out div:hover .linn::after{
+    width: 100%;
+    height: 100%;
+    transition: 0.7s;
+}
+
+.out {
+    position: absolute;
+    top: 55px;
+    z-index: 100;
+    right: 30px;
+    background-color: #a090819a;        /* Drop down list from blog color */
+    padding: 0px 20px;
+    border-radius: 3px;
+    visibility: hidden;
+}
+
+.out .n {
+    margin: 15px 0px;
+    display: block;
+}
+
+.out .drop li {
+    list-style-type: none;
+}
+
+.out-aa {
+    text-decoration: none;
+    color: white;                /* Link color in drop down of blog */
+    font-size: 20px;
+}
+
+.blogg {
+    padding: 15px 0px;
+}
+
+.blogg:hover .out {
+    visibility: visible;
+}
+
+.container1 input {
+    height: 37%;
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    border-radius: 20px;
+    border: 1px solid rgb(173, 173, 173);
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 0px 40px;
+    color: #6B4F36;           /* text color */
+}
+
+.container1 .icon {
+    position: absolute;
+    font-size: 15px;
+    top: 21px;
+    left: 173px;
+    color: #a29385;           /* Search icon color */
+    font-weight: 900;
+}
+
+.container1 .lis {
+    right: 20px;
+    margin-right: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+.card {
+    width: 30%;
+    height: 35%;
+    border-radius: 5px;
+    float: left;
+    position: relative;
+    z-index: 103;
+    color:  #6B4F36;           /* text color */
+}
+
+.card p {
+    font-size: 15px;
+    word-spacing: 1px;
+}
+
+.card a {
+    text-decoration: none;
+    color: #6F4E37;
+}
+
+.container2 {
+    height: 100vh;
+    background: url(../images/b1.jpg) no-repeat bottom;
+    background-size: cover;
+}
+
+.container2 .overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(111, 78, 55, 0.6);  /* Overlay color in section 2 */
+    position: relative;
+}
+
+.parent2 {
+    position: absolute;
+    width: 53%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.parent2 h1 {
+    font-size: 65px;
+    text-transform: uppercase;
+}
+
+.parent2 p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.64);
+}
+
+.p2-btn {
+    width: 20%;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+    border: none;
+    color:#6B4F36;           /* text color */
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.p2-btn:hover {
+    opacity: 0.5;
+}
+
+.parent2 .btn2 {
+    background-color: #D9A299;
+    color: white;
+    margin-left: 6px;
+}
+
+.container {
+    height: 100vh;
+}
+
+.container3, .container4, .container5, .container8, .container10, .container11, .container12 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 35px;
+    text-transform: capitalize;
+    color:#6F4E37;
+    padding-bottom: 10px;
+}
+
+.container3 h2, .container10 h2 {
+    padding-top: 100px;
+}
+
+.container .ll {
+    height: 0.5%;
+    width: 7%;
+    margin: auto;
+    background-color:#b88881;
+}
+
+.container3 .ll{
+    margin-bottom: 75px;
+}
+
+.contain {
+    margin: auto;
+    width: 80%;
+}
+
+.parent3 {
+    width: 100%;
+}
+
+.container3 .card::after, .container5 .card::after {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+    background-color: #E6DFDA;
+    opacity: 0;
+    z-index: -1;
+}
+
+.container3 .card:hover::after, .container5 .card:hover::after {
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+    transition: 1s;
+}
+
+.container8 .card::after, .container10 .card::after, .container11 .card::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+    background-color: #E6DFDA;
+    opacity: 0;
+    z-index: -1;
+}
+
+.container8 .card:hover::after, .container10 .card:hover::after, .container11 .card:hover::after {
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+    transition: 1s;
+}
+
+.container3 .card h3 {
+    padding-top: 18px;
+    font-size: 24px;
+}
+
+.container3 .card:hover .icon {
+    color:#432f22;
+    transition: 1s;
+}
+
+.container3 .card:hover h3 {
+    color:#ffffff;
+    transition: 1s;
+}
+
+.container3 .card, .container5 .card, .container8 .card, .container11 .card {
+    border: 2px solid rgb(220, 190, 195);
+    padding: 2%;
+}
+
+.container3 .card:hover, .container5 .card:hover, .container8 .card:hover, .container11 .card:hover {
+    border: 2px solid rgb(255, 255, 255);
+    transition: 1s;
+}
+
+.card2, .card5 {
+    margin: 0px 5%;
+}
+
+.container3 .icon {
+    color: rgb(140, 118, 121);
+    margin-top: 14px;
+}
+
+.container3 .icon {
+    font-size: 25px;
+}
+
+.container3 p {
+    color: #986f69;
+    margin: 10px 0px 25px 0px;
+}
+
+.container3 .card:hover a, .container11 .card:hover a {
+    color: #986f69;
+    transition: 1s;
+}
+
+.container3 .card:hover p, .container5 .card:hover p {
+    color: #38291e;
+    transition: 1s;
+}
+
+.container4 {
+    background-color:#d9a29927;
+    padding: 70px 0px 10px 0px;
+}
+
+.container4 .ll, .container5 .ll, .container8 .ll , .container11 .ll {
+    margin-bottom: 3%;
+}
+
+.container4 .card {
+    margin-bottom: 40px;
+    color: rgb(255, 244, 244);
+}
+
+.container4 .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(111, 78, 55, 0.7);
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+.container4 .card:hover .overlay{
+    visibility: visible;
+}
+
+.icons {
+    margin: auto;
+    overflow: auto;
+}
+
+.container4 .contain {
+    width: 70%;
+}
+
+.container4 .icon {
+    margin-top: 4px;
+    margin: auto;
+    width: 38px;
+}
+
+.container4 .card1 {
+    background: url(../images/cr1.webp) center;
+    background-size: cover;
+}
+
+.container4 .card2 {
+    background: url(../images/cake5.jpg) center;
+    background-size: cover;
+}
+
+.container4 .card3 {
+    background-image: url(../images/Bread3.jpg);
+    background-size: cover;
+}
+
+.container4 .card4 {
+    background: url(../images/cu4.webp) bottom;
+    background-size: cover;
+}
+
+.container4 .card5 {
+    background: url(../images/donut.webp);
+    background-size: cover;  
+}
+
+.container4 .card6 {
+    background-image: url(../images/coffee3.jpg);
+    background-size: cover;    
+}
+
+.container4 .card h3 {
+    font-size: 35px;
+    padding-top: 36px;
+    font-weight: 900;
+    color: rgba(255, 232, 232, 0.747);
+}
+
+.container4 .icon {
+    font-size: 20px;
+    background-color: rgb(255, 233, 233);
+    color: rgb(140, 118, 121);
+    border-radius: 3px;
+    padding: 8px;
+    margin-top: 7px;
+}
+
+.container4 .card p {
+    margin: 10px 0px;
+    color: white;
+}
+
+.container5, .container8 {
+    padding: 70px 0px 10px 0px;
+}
+
+.container5 .card {
+    margin-bottom: 40px;
+    text-align: left;
+    padding: 3%;    
+    height: 30%;
+}
+
+.container5 .contain h3 {
+    font-size: 24px;
+    text-transform: capitalize;
+}
+
+.container5 .contain p {
+    margin-top: 5px;
+    color: gray;
+}
+
+.container5 .card:hover h3 {
+    color: #986f69;
+    transition: 1s;
+}
+
+.container5 .card:hover a {
+    color: #986f69;
+    transition: 1s;
+}
+
+.container5 .lef{
+    float: left;
+    height: 100%;
+    width: 15%;
+    margin-right: 5px;
+    color:#b88881;
+}
+
+.container5 .lef .icon {
+    font-size: 20px;
+    padding-top: 4px;
+}
+
+.container5 a {
+    color:#bb958f ;
+}
+
+.con {
+    height: 55vh;
+    width: 100%;
+}
+
+.container6 {
+    padding: 130px 40px;
+}
+
+.container6 .lll {
+    height: 0.8%;
+    width: 14%;
+    background-color:#b88881;
+}
+
+.container6 .bio {
+    color: #938880;
+    font-size: 18px;
+    margin: 40px 0px;
+}  
+
+.container6 h6 {
+    font-size: 17px;
+    margin-bottom: 25px;
+    color: #795c48;
+}
+
+.container6 .lef {
+    float: left;
+    text-align: left;
+    margin-right: 10%;
+    width: 60%;
+
+}
+
+.container6 h3 {
+    font-size: 40px;
+    margin-bottom: 7px;
+    color:#6B4F36;            /* text color */
+}
+
+.container6 .rig {
+    width: 30%;
+    float: left;
+    position: relative;
+}
+ 
+.container6 .upp {
+    height: 90%;
+    width: 100%;
+    background: gray url(../images/img13.jpg) center;
+    background-size: cover;
+}
+
+.container6 .downn {
+    margin-top: 15px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+
+.container6 .cir1, .container6 .cir2 {
+    margin-right: 5px;
+}
+
+.container6 .cir {
+    height: 10px;
+    width: 10px;
+    background-color: #cec7c3;
+    border-radius: 50%;
+    float: left;
+}
+
+.container6 .cir:hover {
+    background-color: #c1958e;
+}
+
+.container6 .cir2 {
+    background-color: #c1958e;
+}
+
+.container7 {
+    background: url(../images/img18.jpg) fixed center;
+    background-size: cover;
+}
+
+.container7 .overlay, .container9 .overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(111, 78, 55, 0.7);
+    position: relative;
+}
+
+.container7 .cont {
+    width: 65%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.parent7 {
+    width: 100%;
+}
+
+.container7 .box {
+    float: left;
+    text-align: center;
+    width: 15%;
+}
+
+.container7 .box1, .container7 .box3 {
+    margin: 0px 8%;
+}
+
+.container7 .box .icons {
+    font-size: 34px;
+    color: #b88881;
+    margin-bottom: 10px;
+}
+
+.container7 .box p {
+    color: rgba(255, 255, 255, 0.79);
+    font-size: 18px;
+    text-transform: capitalize;
+} 
+
+.container7 .box h3 {
+    color: white;
+    font-size: 23px;
+}
+
+.container8 .card {
+    height: 68%;
+    padding-top: 10px;
+}
+
+.container8 .card .circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid #795c48;
+    margin: auto;
+    position: relative;
+    color: #7f7065;
+}
+
+.container8 .card:hover .circle {
+    color: #7f7065;
+}
+
+.container8 .card:hover h3 {
+    color: #584537;
+    transition: 1s;
+}
+
+.container8 .card:hover h6 {
+    color: #ac9e95;
+    transition: 1s;
+}
+
+.container .mid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container8 .card h3 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #6c5c51;
+    margin: 15px 0px
+}
+
+.container8 .card h6 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #969290;
+    margin: 19px 0px
+}
+
+.container8 h5 {
+    font-size: 28px;
+}
+
+.container8 .circle p {
+    font-size: 13px;
+}
+
+.container8 button {
+    width: 60%;
+    padding: 3%;
+    border-radius: 6px;
+    border: 2px solid rgba(255, 255, 255, 0);
+    background-color:rgba(202, 157, 150, 0.8); 
+    color: white;
+}
+
+.container9 {
+    background: url(../images/img4.jpg) fixed center;
+    background-size: cover;
+}
+
+.container9 .contain {
+    width: 60%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.parent9 {
+    width: 100%;
+}
+
+.container9 .parent9 .box {
+    float: left;
+    width: 45%;
+    color: white;
+}
+
+.container9 .lef, .container9 .rig {
+    float: left;
+}
+
+.container9 .parent9 .circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 17px;
+}
+
+.container9 .upp .rig {
+    margin-top: 25px;
+}
+
+.container9 .upp {
+    overflow: auto;
+    margin-bottom: 10px;
+}
+
+.container9 .box1 {
+    margin-right: 10%;
+}
+
+.container9 .box1 .circle {
+    background: white url(../images/hana2.jpg) no-repeat fixed center;
+    background-size: cover;
+}
+
+.container9 .box2 .circle {
+    background: white url(../images/ibra.jpg) no-repeat fixed center;
+    background-size: cover;
+}
+
+.container9 .box h3 {
+    font-size: 27px;
+    font-weight: 900;
+}
+
+.container9 .box h4 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #f1ccb0cc;
+}
+
+.container9 p {
+    color: #e9e4e0
+}
+
+.container10 .card::after {
+    background-color: #bdb4ad;
+}
+
+.container10 .card{
+    background-color: #ede4e07e;
+    height: 60%;
+    padding: 2%;
+}
+
+.container10 .photo {
+    margin: auto;
+    width: 80%;
+    height: 65%;
+    background-color: #bca28f;
+    margin-bottom: 10px;
+    border-radius: 2px; 
+    position: relative;
+}
+
+.container10 .photo1 {
+    background: grey url(../images/chef6.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.container10 .photo2 {
+    background: grey url(../images/chef5.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.container10 .photo3 {
+    background: grey url(../images/chef3.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.container10 .card h3 {
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.container10 .card:hover h3 {
+    color: white;
+    transition: 1s;
+}
+
+.container10 .card p {
+    color: rgb(81, 80, 80);
+}
+
+.container10 .card:hover p {
+    color: #432f22;
+    transition: 1s;
+}
+
+.container10 .ll {
+    margin-bottom: 4%;
+}
+
+.container10 .photo .icons .icon { 
+    line-height: 25px;
+}
+
+.container10 .photo .icons { 
+    position: absolute;
+    top: 0;
+    left: 0; 
+    bottom: 0;
+    right: 0;
+    visibility: hidden;
+    background-color: rgba(48, 48, 48, 0.5);
+} 
+
+.container10 .icons a {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(233, 233, 233);
+    margin-left: auto;
+}
+
+.container10 .card:hover .icons {
+    visibility: visible;
+}
+
+.container11 {
+    padding: 70px 0px 10px 0px;
+}
+
+.container11 .icon {
+    margin-top: 20px;    
+}
+
+.container11 .ic {
+    display: inline-block;
+}
+
+.container11 .ic1, .container11 .ic2 {
+    margin-right: 10px;
+}
+
+.container11 .im {
+    width: 80%;
+    height: 50%;
+    background-color: #b88881;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+.container11 .card {
+    height: 75%;
+}
+
+.container11 .card p {
+    margin-bottom: 20px;
+    color: #938880;
+}
+
+.container11 h3 {
+    font-size: 25px;
+    margin: 20px 0px;
+}
+
+.container11 span {
+    font-size: 14px;
+}
+
+.container11 .card p {
+    font-size: 17px;
+}
+
+.container11 .im1 {
+    background: url(../images/img17.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.container11 .im2 {
+    background: url(../images/cake1.jpg) no-repeat bottom;
+    background-size: cover;
+}
+
+.container11 .im3 {
+    background: url(../images/a7.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.container11 .card:hover h3 {
+    color: white;
+    transition: 1s;
+}
+
+.container11 .card:hover p {
+    color:#432f22;
+    transition: 1s;
+}
+
+.container11 .card:hover span {
+    color:#432f22;
+    transition: 1s;
+}
+
+/* .read { this is not working for some reason
+    padding-top: 100px;
+} */
+
+.container12 {
+    height: 50vh;
+    position: relative;
+    text-align: center;
+    background-color:#F9F1EF;
+}
+
+.cop {
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/*margin auto is not working here i guess because the divs that took float left search it up even when i wrote overflow auto*/
+.container12 .icons {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.container12 .icon {
+    float: left;
+    border-radius: 50%;
+    background-color: #6F4E37;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    margin: 0px 3px;
+}
+
+.container12 .icon:hover {
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.container12 .icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: white;
+}
+
+.container12 img {
+    height: 60%;
+    width: auto;
+    margin: 25px 0px 15px 0px;
+    border-radius: 5px;
+}
