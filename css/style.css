@@ -405,12 +405,12 @@ h2 {
 }
 
 .container4 .card3 {
-    background-image: url(../images/Bread3.jpg);
+    background-image: url(../images/Bread1.jpg);
     background-size: cover;
 }
 
 .container4 .card4 {
-    background: url(../images/cu4.webp) bottom;
+    background: gray url(../images/cu4.webp) bottom;
     background-size: cover;
 }
 
